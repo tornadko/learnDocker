@@ -11,12 +11,15 @@ services:
       - api_db
     ports:
       - "80:8080"
+    volumes:
+      - mongodb_api:/data/db
   api_db:
     image: mongo
     restart: always
     ports:
       - "27017:27017"
     volumes:
-      - api_db_data:/data/db
+      - mongodb_api:/data/db
 volumes:
-  api_db_data:
+  mongodb_api:
+    name: mongodb_api

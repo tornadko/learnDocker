@@ -27,7 +27,6 @@ connectDB()
   });
 
 // Add a user
-// To add call: curl -X POST -H "Content-Type: application/json" -d '{"userName": "Alex K"}' http://localhost:80/users
 app.post('/users', (req, res) => {
   const { userName } = req.body;
 
