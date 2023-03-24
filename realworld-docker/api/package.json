@@ -5,10 +5,14 @@
   "author": "Alex Kucherenko <first.last@example.com>",
   "main": "server.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "dev": "nodemon --legacy-watch src/index.js"
   },
   "dependencies": {
     "express": "^4.16.1",
     "mongoose": "^7.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }
