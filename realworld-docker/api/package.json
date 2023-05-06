@@ -1,18 +1,11 @@
 {
-  "name": "docker_web_app",
-  "version": "1.0.0",
-  "description": "Node.js on Docker",
-  "author": "Alex Kucherenko <first.last@example.com>",
-  "main": "server.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon --legacy-watch src/index.js"
+    "start": "node index.js",
+    "dev": "nodemon --legacy-watch ./src/app.js"
   },
   "dependencies": {
-    "express": "^4.16.1",
-    "mongoose": "^7.0.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.22"
+    "express": "^4.18.2",
+    "mongoose": "^6.10.0",
+    "nodemon": "^2.0.20"
   }
 }
